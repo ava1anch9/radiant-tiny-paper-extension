@@ -8,7 +8,7 @@ class Admin::TinyPaperController < ApplicationController
     filter_by_params([:view, :size])
     list_params[:images] = 'images'
     @assets = Asset.assets_paginate(list_params)
-    @thumbnails = Asset.attachment_definitions[:asset][:styles]
+    @thumbnails = Asset.thumbnail_definitions   # @thumbnails = Asset.attachment_definitions[:asset][:styles]
 
     respond_to do |f|
       f.html { render }
@@ -41,7 +41,7 @@ class Admin::TinyPaperController < ApplicationController
   def create
     @asset = Asset.new(params[:asset])
     if @asset.save
-      flash[:success] = "Asset successfully uploaded."
+      flash[:success] = t("tiny_mce.image_uploaded")
       redirect_to :"#{params[:type]}"
     else
       flash[:error] = @asset.errors.full_messages.join(" ")

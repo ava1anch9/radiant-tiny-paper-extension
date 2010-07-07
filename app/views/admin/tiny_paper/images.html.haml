@@ -5,7 +5,7 @@
         %table
           %tr
             %td
-              %label{:for => 'title'} Filter:
+              %label{:for => 'title'}= t('tiny_mce.filter')
           %tr
             %td
               #filter
@@ -23,7 +23,7 @@
                   })
                 = reset_filters_tag
             %td
-              %img{:id => "spinner", :style => "display:none", :src => "/images/admin/spinner.gif", :alt => "loading"}
+              %img{:id => "spinner", :style => "display:none", :src => "/images/admin/spinner.gif", :alt => t('tiny_mce.loading')}
     .right
       = render :partial => "upload"
     

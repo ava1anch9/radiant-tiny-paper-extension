@@ -14,4 +14,5 @@ tinyMCE.init({
   theme_advanced_resizing : true,
   relative_urls : false,
   file_browser_callback : "assetMethods.browserHook",
+  language : 'en'
 });

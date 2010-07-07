@@ -1,9 +1,9 @@
 #tiny_paper
   #top.pages_list
     %ul.clearfix
-      %li= link_to "Files", files_path
-      %li= link_to "Pages", pages_path, :class => "selected"
-    %p Choose a page to create a direct link to it:
+      %li= link_to t('tiny_mce.links.files'), files_path
+      %li= link_to t('tiny_mce.links.pages'), pages_path, :class => "selected"
+    %p= t('tiny_mce.choose_page')
   #hd
     #content_files
       #assets

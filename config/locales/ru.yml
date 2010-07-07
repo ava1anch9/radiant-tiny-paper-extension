@@ -1,0 +1,28 @@
+---
+ru:
+  tiny_mce:
+    ascending: "По возрастанию"
+    image_uploaded: "Изображение успешно загружено."
+    choose_file_to_upload: "Выберите файл для загрузки"
+    choose_page: "Выберите страницу, чтобы создать прямую ссылку на нее:"
+    choose_size: "Выберите размер"
+    columns:
+      file_name: "Название"
+      file_type: "Тип"
+      file_size: "Размер"
+      image_size: "Размер изображения"
+      image_title: "Назавние изображения"
+      number: "№"
+    descending: "По убыванию"
+    filter: "Фильтр"
+    links:
+      files: "Файлы"
+      pages: "Страницы"
+    loading: "Загрузка..."
+    no_results: "Ничего не найдено!"
+    original: "исходный"
+    sort_by_title: "Сортировка:"
+    text_list: "Текстовый список"
+    thumbnails: "Ярлыки"
+    upload: "Загрузить"
+    view_mode: "Показывать:"
